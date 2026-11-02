@@ -63,10 +63,10 @@ class TestVarasto(unittest.TestCase):
         self.assertAlmostEqual(maara, 0.0)
 
     def test_ei_voi_ottaa_enempaa_kuin_saldon(self):
-        self.varasto.lisaa_varastoon(6)
+        self.varasto.lisaa_varastoon(8)
         maara = self.varasto.ota_varastosta(100)
 
-        self.assertAlmostEqual(maara, 6)
+        self.assertAlmostEqual(maara, 8)
         self.assertAlmostEqual(self.varasto.saldo, 0)
 
     def test_varasto_tayttyy_kun_enemman_kuin_tilaa(self):

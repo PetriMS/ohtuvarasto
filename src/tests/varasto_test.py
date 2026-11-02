@@ -78,4 +78,4 @@ class TestVarasto(unittest.TestCase):
         teksti = str(self.varasto)
 
         self.assertIn("saldo", teksti)
-        self.assertIn("kakka", teksti)
+        self.assertIn("tilaa", teksti)

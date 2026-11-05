@@ -71,7 +71,7 @@ class TestVarasto(unittest.TestCase):
 
     def test_varasto_tayttyy_kun_enemman_kuin_tilaa(self):
         self.varasto.lisaa_varastoon(200)
-        
+
         self.assertAlmostEqual(self.varasto.saldo, 10)
 
     def test_stringitesti_palauttaa_mjonon(self):
